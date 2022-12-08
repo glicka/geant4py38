@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+
+  <define/>
+
+  <materials>
+    <isotope N="1" Z="1" name="H10x7fffc4999880">
+      <atom unit="g/mole" value="1.00782503081372"/>
+    </isotope>
+    <isotope N="2" Z="1" name="H20x7fffc516b1c0">
+      <atom unit="g/mole" value="2.01410199966617"/>
+    </isotope>
+    <element name="Hydrogen0x7fffc44104b0">
+      <fraction n="0.999885" ref="H10x7fffc4999880"/>
+      <fraction n="0.000115" ref="H20x7fffc516b1c0"/>
+    </element>
+    <isotope N="12" Z="6" name="C120x7fffc516b2e0">
+      <atom unit="g/mole" value="12"/>
+    </isotope>
+    <isotope N="13" Z="6" name="C130x7fffc516b330">
+      <atom unit="g/mole" value="13.0034"/>
+    </isotope>
+    <element name="Carbon0x7fffc3f42f80">
+      <fraction n="0.9893" ref="C120x7fffc516b2e0"/>
+      <fraction n="0.0107" ref="C130x7fffc516b330"/>
+    </element>
+    <isotope N="14" Z="7" name="N140x7fffc4999640">
+      <atom unit="g/mole" value="14.0031"/>
+    </isotope>
+    <isotope N="15" Z="7" name="N150x7fffc516b450">
+      <atom unit="g/mole" value="15.0001"/>
+    </isotope>
+    <element name="Nitrogen0x7fffc2a237f0">
+      <fraction n="0.99632" ref="N140x7fffc4999640"/>
+      <fraction n="0.00368" ref="N150x7fffc516b450"/>
+    </element>
+    <isotope N="16" Z="8" name="O160x7fffc516b590">
+      <atom unit="g/mole" value="15.9949"/>
+    </isotope>
+    <isotope N="17" Z="8" name="O170x7fffc516b5e0">
+      <atom unit="g/mole" value="16.9991"/>
+    </isotope>
+    <isotope N="18" Z="8" name="O180x7fffc516b630">
+      <atom unit="g/mole" value="17.9992"/>
+    </isotope>
+    <element name="Oxygen0x7fffc237d0f0">
+      <fraction n="0.99757" ref="O160x7fffc516b590"/>
+      <fraction n="0.00038" ref="O170x7fffc516b5e0"/>
+      <fraction n="0.00205" ref="O180x7fffc516b630"/>
+    </element>
+    <isotope N="23" Z="11" name="Na230x7fffc516b750">
+      <atom unit="g/mole" value="22.9898"/>
+    </isotope>
+    <element name="Sodium0x7fffc2190ff0">
+      <fraction n="1" ref="Na230x7fffc516b750"/>
+    </element>
+    <isotope N="24" Z="12" name="Mg240x7fffc516b870">
+      <atom unit="g/mole" value="23.985"/>
+    </isotope>
+    <isotope N="25" Z="12" name="Mg250x7fffc516b8c0">
+      <atom unit="g/mole" value="24.9858"/>
+    </isotope>
+    <isotope N="26" Z="12" name="Mg260x7fffc516b910">
+      <atom unit="g/mole" value="25.9826"/>
+    </isotope>
+    <element name="Magnesium0x7fffc42f4810">
+      <fraction n="0.7899" ref="Mg240x7fffc516b870"/>
+      <fraction n="0.1" ref="Mg250x7fffc516b8c0"/>
+      <fraction n="0.1101" ref="Mg260x7fffc516b910"/>
+    </element>
+    <isotope N="31" Z="15" name="P310x7fffc516ba00">
+      <atom unit="g/mole" value="30.9738"/>
+    </isotope>
+    <element name="Phosphorus0x7fffc4930f10">
+      <fraction n="1" ref="P310x7fffc516ba00"/>
+    </element>
+    <isotope N="32" Z="16" name="S320x7fffc516b4a0">
+      <atom unit="g/mole" value="31.9721"/>
+    </isotope>
+    <isotope N="33" Z="16" name="S330x7fffc516bb90">
+      <atom unit="g/mole" value="32.9715"/>
+    </isotope>
+    <isotope N="34" Z="16" name="S340x7fffc516bbe0">
+      <atom unit="g/mole" value="33.9679"/>
+    </isotope>
+    <isotope N="36" Z="16" name="S360x7fffc516bc30">
+      <atom unit="g/mole" value="35.9671"/>
+    </isotope>
+    <element name="Sulfur0x7fffc4911760">
+      <fraction n="0.9493" ref="S320x7fffc516b4a0"/>
+      <fraction n="0.0076" ref="S330x7fffc516bb90"/>
+      <fraction n="0.0429" ref="S340x7fffc516bbe0"/>
+      <fraction n="0.0002" ref="S360x7fffc516bc30"/>
+    </element>
+    <isotope N="35" Z="17" name="Cl350x7fffc516bda0">
+      <atom unit="g/mole" value="34.9689"/>
+    </isotope>
+    <isotope N="37" Z="17" name="Cl370x7fffc516bdf0">
+      <atom unit="g/mole" value="36.9659"/>
+    </isotope>
+    <element name="Chlorine0x7fffc49173b0">
+      <fraction n="0.7578" ref="Cl350x7fffc516bda0"/>
+      <fraction n="0.2422" ref="Cl370x7fffc516bdf0"/>
+    </element>
+    <isotope N="39" Z="19" name="K390x7fffc516bfc0">
+      <atom unit="g/mole" value="38.9637"/>
+    </isotope>
+    <isotope N="40" Z="19" name="K400x7fffc516c010">
+      <atom unit="g/mole" value="39.964"/>
+    </isotope>
+    <isotope N="41" Z="19" name="K410x7fffc516c060">
+      <atom unit="g/mole" value="40.9618"/>
+    </isotope>
+    <element name="Potassium0x7fffc4902b40">
+      <fraction n="0.932581" ref="K390x7fffc516bfc0"/>
+      <fraction n="0.000117" ref="K400x7fffc516c010"/>
+      <fraction n="0.067302" ref="K410x7fffc516c060"/>
+    </element>
+    <isotope N="40" Z="20" name="Ca400x7fffc516c230">
+      <atom unit="g/mole" value="39.9626"/>
+    </isotope>
+    <isotope N="42" Z="20" name="Ca420x7fffc516c280">
+      <atom unit="g/mole" value="41.9586"/>
+    </isotope>
+    <isotope N="43" Z="20" name="Ca430x7fffc516c2d0">
+      <atom unit="g/mole" value="42.9588"/>
+    </isotope>
+    <isotope N="44" Z="20" name="Ca440x7fffc516c320">
+      <atom unit="g/mole" value="43.9555"/>
+    </isotope>
+    <isotope N="46" Z="20" name="Ca460x7fffc516c370">
+      <atom unit="g/mole" value="45.9537"/>
+    </isotope>
+    <isotope N="48" Z="20" name="Ca480x7fffc516c3c0">
+      <atom unit="g/mole" value="47.9525"/>
+    </isotope>
+    <element name="Calcium0x7fffc490ef50">
+      <fraction n="0.96941" ref="Ca400x7fffc516c230"/>
+      <fraction n="0.00647" ref="Ca420x7fffc516c280"/>
+      <fraction n="0.00135" ref="Ca430x7fffc516c2d0"/>
+      <fraction n="0.02086" ref="Ca440x7fffc516c320"/>
+      <fraction n="4e-05" ref="Ca460x7fffc516c370"/>
+      <fraction n="0.00187" ref="Ca480x7fffc516c3c0"/>
+    </element>
+    <isotope N="54" Z="26" name="Fe540x7fffc516c5b0">
+      <atom unit="g/mole" value="53.9396"/>
+    </isotope>
+    <isotope N="56" Z="26" name="Fe560x7fffc516c600">
+      <atom unit="g/mole" value="55.9349"/>
+    </isotope>
+    <isotope N="57" Z="26" name="Fe570x7fffc516c650">
+      <atom unit="g/mole" value="56.9354"/>
+    </isotope>
+    <isotope N="58" Z="26" name="Fe580x7fffc516c6a0">
+      <atom unit="g/mole" value="57.9333"/>
+    </isotope>
+    <element name="Iron0x7fffc475ba60">
+      <fraction n="0.05845" ref="Fe540x7fffc516c5b0"/>
+      <fraction n="0.91754" ref="Fe560x7fffc516c600"/>
+      <fraction n="0.02119" ref="Fe570x7fffc516c650"/>
+      <fraction n="0.00282" ref="Fe580x7fffc516c6a0"/>
+    </element>
+    <isotope N="64" Z="30" name="Zn640x7fffc516c840">
+      <atom unit="g/mole" value="63.9291"/>
+    </isotope>
+    <isotope N="66" Z="30" name="Zn660x7fffc516c890">
+      <atom unit="g/mole" value="65.926"/>
+    </isotope>
+    <isotope N="67" Z="30" name="Zn670x7fffc516c8e0">
+      <atom unit="g/mole" value="66.9271"/>
+    </isotope>
+    <isotope N="68" Z="30" name="Zn680x7fffc516c930">
+      <atom unit="g/mole" value="67.9248"/>
+    </isotope>
+    <isotope N="70" Z="30" name="Zn700x7fffc516c980">
+      <atom unit="g/mole" value="69.9253"/>
+    </isotope>
+    <element name="Zinc0x7fffc46e41d0">
+      <fraction n="0.4863" ref="Zn640x7fffc516c840"/>
+      <fraction n="0.279" ref="Zn660x7fffc516c890"/>
+      <fraction n="0.041" ref="Zn670x7fffc516c8e0"/>
+      <fraction n="0.1875" ref="Zn680x7fffc516c930"/>
+      <fraction n="0.0062" ref="Zn700x7fffc516c980"/>
+    </element>
+    <material name="SoftTissue_00x7fffc32b2760" state="solid">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="68.0915449851561"/>
+      <D unit="g/cm3" value="0.999999565591157"/>
+      <fraction n="0.104472" ref="Hydrogen0x7fffc44104b0"/>
+      <fraction n="0.23219" ref="Carbon0x7fffc3f42f80"/>
+      <fraction n="0.02488" ref="Nitrogen0x7fffc2a237f0"/>
+      <fraction n="0.630238" ref="Oxygen0x7fffc237d0f0"/>
+      <fraction n="0.00113" ref="Sodium0x7fffc2190ff0"/>
+      <fraction n="0.00013" ref="Magnesium0x7fffc42f4810"/>
+      <fraction n="0.00133" ref="Phosphorus0x7fffc4930f10"/>
+      <fraction n="0.00199" ref="Sulfur0x7fffc4911760"/>
+      <fraction n="0.00134" ref="Chlorine0x7fffc49173b0"/>
+      <fraction n="0.00199" ref="Potassium0x7fffc4902b40"/>
+      <fraction n="0.00023" ref="Calcium0x7fffc490ef50"/>
+      <fraction n="5e-05" ref="Iron0x7fffc475ba60"/>
+      <fraction n="3e-05" ref="Zinc0x7fffc46e41d0"/>
+    </material>
+    <isotope N="1" Z="1" name="H10x7fffc5143ca0">
+      <atom unit="g/mole" value="1.00782503081372"/>
+    </isotope>
+    <isotope N="2" Z="1" name="H20x7fffc5076c80">
+      <atom unit="g/mole" value="2.01410199966617"/>
+    </isotope>
+    <element name="H0x7fffc4bb8c70">
+      <fraction n="0.999885" ref="H10x7fffc5143ca0"/>
+      <fraction n="0.000115" ref="H20x7fffc5076c80"/>
+    </element>
+    <isotope N="16" Z="8" name="O160x7fffc500b8f0">
+      <atom unit="g/mole" value="15.9949"/>
+    </isotope>
+    <isotope N="17" Z="8" name="O170x7fffc4fded40">
+      <atom unit="g/mole" value="16.9991"/>
+    </isotope>
+    <isotope N="18" Z="8" name="O180x7fffc4fd2c50">
+      <atom unit="g/mole" value="17.9992"/>
+    </isotope>
+    <element name="O0x7fffc454bbd0">
+      <fraction n="0.99757" ref="O160x7fffc500b8f0"/>
+      <fraction n="0.00038" ref="O170x7fffc4fded40"/>
+      <fraction n="0.00205" ref="O180x7fffc4fd2c50"/>
+    </element>
+    <material name="G4_WATER0x7fffc34cbe90" state="solid">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="78"/>
+      <D unit="g/cm3" value="1"/>
+      <fraction n="0.111898477841067" ref="H0x7fffc4bb8c70"/>
+      <fraction n="0.888101522158933" ref="O0x7fffc454bbd0"/>
+    </material>
+    <material name="G4_Galactic0x7fffc46bbe20" state="gas">
+      <T unit="K" value="2.73"/>
+      <P unit="pascal" value="3e-18"/>
+      <MEE unit="eV" value="21.8"/>
+      <D unit="g/cm3" value="1e-25"/>
+      <fraction n="1" ref="H0x7fffc4bb8c70"/>
+    </material>
+  </materials>
+
+  <solids>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ionChamber0x7fffc507bd10" rmax="50" rmin="0" startphi="0" z="50"/>
+    <box lunit="mm" name="waterBox0x7fffc508f990" x="5000" y="5000" z="5000"/>
+    <box lunit="mm" name="boxDummy0x7fffc508e5b0" x="5060" y="5060" z="5060"/>
+  </solids>
+
+  <structure>
+    <volume name="ic_00x7fffc3684b30">
+      <materialref ref="SoftTissue_00x7fffc32b2760"/>
+      <solidref ref="ionChamber0x7fffc507bd10"/>
+    </volume>
+    <volume name="waterBox_00x7fffc25fe4c0">
+      <materialref ref="G4_WATER0x7fffc34cbe90"/>
+      <solidref ref="waterBox0x7fffc508f990"/>
+      <physvol name="ic_00x7fffc4f36050">
+        <volumeref ref="ic_00x7fffc3684b30"/>
+        <position name="ic_00x7fffc4f36050_pos" unit="mm" x="0" y="0" z="2474.5"/>
+      </physvol>
+    </volume>
+    <volume name="phantom_00x7fffc4eb86a0">
+      <materialref ref="G4_Galactic0x7fffc46bbe20"/>
+      <solidref ref="boxDummy0x7fffc508e5b0"/>
+      <physvol name="waterBox_00x7fffc4d6d090">
+        <volumeref ref="waterBox_00x7fffc25fe4c0"/>
+      </physvol>
+    </volume>
+  </structure>
+
+  <setup name="Default" version="1.0">
+    <world ref="phantom_00x7fffc4eb86a0"/>
+  </setup>
+
+</gdml>

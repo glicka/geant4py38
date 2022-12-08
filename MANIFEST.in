@@ -1,0 +1,2 @@
+include geant4py/geo/*.txt
+include geant4py/geo/prebuilt/*.txt

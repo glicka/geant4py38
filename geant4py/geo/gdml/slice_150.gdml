@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+
+  <define/>
+
+  <materials>
+    <isotope N="1" Z="1" name="H10x7fffc07332f0">
+      <atom unit="g/mole" value="1.00782503081372"/>
+    </isotope>
+    <isotope N="2" Z="1" name="H20x7fffc0730d40">
+      <atom unit="g/mole" value="2.01410199966617"/>
+    </isotope>
+    <element name="H0x7fffbf7a4800">
+      <fraction n="0.999885" ref="H10x7fffc07332f0"/>
+      <fraction n="0.000115" ref="H20x7fffc0730d40"/>
+    </element>
+    <material name="G4_Galactic0x7fffbfe189c0" state="gas">
+      <T unit="K" value="2.73"/>
+      <P unit="pascal" value="3e-18"/>
+      <MEE unit="eV" value="21.8"/>
+      <D unit="g/cm3" value="1e-25"/>
+      <fraction n="1" ref="H0x7fffbf7a4800"/>
+    </material>
+  </materials>
+
+  <solids>
+    <box lunit="mm" name="boxDummy0x7f89e66ce340" x="28" y="20" z="0.4"/>
+  </solids>
+
+  <structure>
+    <volume name="slice_1500x7f89e66ccb00">
+      <materialref ref="G4_Galactic0x7fffbfe189c0"/>
+      <solidref ref="boxDummy0x7f89e66ce340"/>
+    </volume>
+  </structure>
+
+  <setup name="Default" version="1.0">
+    <world ref="slice_1500x7f89e66ccb00"/>
+  </setup>
+
+</gdml>

@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<heprep version="2.0"
+  xmlns="http://java.freehep.org/schemas/heprep/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.freehep.org/schemas/heprep/2.0 http://java.freehep.org/schemas/heprep/2.0/HepRep.xsd">
+  <layer order="Geometry, Event, CalHit, Trajectory, Hit"/>
+  <typetree name="G4GeometryTypes" version="1.0">
+    <type name="Geometry">
+      <attdef category="Physics" desc="Logical Volume" extra=""
+        name="LVol"/>
+      <attdef category="Physics" desc="Cuts Region" extra=""
+        name="Region"/>
+      <attdef category="Physics" desc="Root Region" extra=""
+        name="RootRegion"/>
+      <attdef category="Physics" desc="Solid Name" extra=""
+        name="Solid"/>
+      <attdef category="General" desc="Generator of the file"
+        extra="" name="Generator"/>
+      <attdef category="General"
+        desc="Version of the Generator" extra="" name="GeneratorVersion"/>
+      <attdef category="Draw"
+        desc="Theta of initial suggested viewpoint" extra="rad" name="ViewTheta"/>
+      <attdef category="Draw"
+        desc="Phi of initial suggested viewpoint" extra="rad" name="ViewPhi"/>
+      <attdef category="Draw"
+        desc="Scale of initial suggested viewpoint" extra="" name="ViewScale"/>
+      <attdef category="Draw"
+        desc="Translate in X of initial suggested viewpoint" extra="" name="ViewTranslateX"/>
+      <attdef category="Draw"
+        desc="Translate in Y of initial suggested viewpoint" extra="" name="ViewTranslateY"/>
+      <attdef category="Draw"
+        desc="Translate in Z of initial suggested viewpoint" extra="" name="ViewTranslateZ"/>
+      <attdef category="Physics" desc="Length" extra=""
+        name="PointUnit"/>
+      <attdef category="Draw"
+        desc="Use HepRep Solids rather than Geant4 Primitives" extra="" name="UseSolids"/>
+      <attdef category="Draw" desc="Write Invisible Objects"
+        extra="" name="WriteInvisibles"/>
+      <attdef category="Physics" desc="Entity Type" extra=""
+        name="EType"/>
+      <attdef category="Physics" desc="Material Name" extra=""
+        name="Material"/>
+      <attdef category="Physics" desc="Material Density"
+        extra="" name="Density"/>
+      <attdef category="Physics" desc="Material State" extra=""
+        name="State"/>
+      <attdef category="Physics"
+        desc="Material Radiation Length" extra="" name="Radlen"/>
+      <attvalue name="Layer" value="0"/>
+      <attvalue name="LVol" value=""/>
+      <attvalue name="Region" value=""/>

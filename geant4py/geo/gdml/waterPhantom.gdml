@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+
+  <define/>
+
+  <materials>
+    <isotope N="12" Z="6" name="C120x7fd669e2c0d0">
+      <atom unit="g/mole" value="12"/>
+    </isotope>
+    <isotope N="13" Z="6" name="C130x7fd669e111b0">
+      <atom unit="g/mole" value="13.0034"/>
+    </isotope>
+    <element name="C0x7fd669e3b610">
+      <fraction n="0.9893" ref="C120x7fd669e2c0d0"/>
+      <fraction n="0.0107" ref="C130x7fd669e111b0"/>
+    </element>
+    <isotope N="14" Z="7" name="N140x7fd669ef1ac0">
+      <atom unit="g/mole" value="14.0031"/>
+    </isotope>
+    <isotope N="15" Z="7" name="N150x7fd669e0ea60">
+      <atom unit="g/mole" value="15.0001"/>
+    </isotope>
+    <element name="N0x7fd669e2eca0">
+      <fraction n="0.99632" ref="N140x7fd669ef1ac0"/>
+      <fraction n="0.00368" ref="N150x7fd669e0ea60"/>
+    </element>
+    <isotope N="16" Z="8" name="O160x7fd6a9c9ca60">
+      <atom unit="g/mole" value="15.9949"/>
+    </isotope>
+    <isotope N="17" Z="8" name="O170x7fd6a9cc37d0">
+      <atom unit="g/mole" value="16.9991"/>
+    </isotope>
+    <isotope N="18" Z="8" name="O180x7fd669e255d0">
+      <atom unit="g/mole" value="17.9992"/>
+    </isotope>
+    <element name="O0x7fd669e311d0">
+      <fraction n="0.99757" ref="O160x7fd6a9c9ca60"/>
+      <fraction n="0.00038" ref="O170x7fd6a9cc37d0"/>
+      <fraction n="0.00205" ref="O180x7fd669e255d0"/>
+    </element>
+    <isotope N="36" Z="18" name="Ar360x7fd669e0b720">
+      <atom unit="g/mole" value="35.9675"/>
+    </isotope>
+    <isotope N="38" Z="18" name="Ar380x7fd669e26800">
+      <atom unit="g/mole" value="37.9627"/>
+    </isotope>
+    <isotope N="40" Z="18" name="Ar400x7fd669e178f0">
+      <atom unit="g/mole" value="39.9624"/>
+    </isotope>
+    <element name="Ar0x7fd669e17fd0">
+      <fraction n="0.003365" ref="Ar360x7fd669e0b720"/>
+      <fraction n="0.000632" ref="Ar380x7fd669e26800"/>
+      <fraction n="0.996003" ref="Ar400x7fd669e178f0"/>
+    </element>
+    <material name="G4_AIR_00x7fd6a9c792c0" state="gas">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="85.7"/>
+      <D unit="g/cm3" value="0.00120479"/>
+      <fraction n="0.000124000124000124" ref="C0x7fd669e3b610"/>
+      <fraction n="0.755267755267755" ref="N0x7fd669e2eca0"/>
+      <fraction n="0.231781231781232" ref="O0x7fd669e311d0"/>
+      <fraction n="0.0128270128270128" ref="Ar0x7fd669e17fd0"/>
+    </material>
+    <isotope N="1" Z="1" name="H10x7fd6d9df9510">
+      <atom unit="g/mole" value="1.00782503081372"/>
+    </isotope>
+    <isotope N="2" Z="1" name="H20x7fd6d9dfcd60">
+      <atom unit="g/mole" value="2.01410199966617"/>
+    </isotope>
+    <element name="H0x7fd669d16ac0">
+      <fraction n="0.999885" ref="H10x7fd6d9df9510"/>
+      <fraction n="0.000115" ref="H20x7fd6d9dfcd60"/>
+    </element>
+    <material name="G4_WATER_00x7fd6a9ce67e0" state="solid">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="78"/>
+      <D unit="g/cm3" value="1"/>
+      <fraction n="0.111898477841067" ref="H0x7fd669d16ac0"/>
+      <fraction n="0.888101522158933" ref="O0x7fd669e311d0"/>
+    </material>
+    <material name="G4_Galactic_00x7fd6d9d04330" state="gas">
+      <T unit="K" value="2.73"/>
+      <P unit="pascal" value="3e-18"/>
+      <MEE unit="eV" value="21.8"/>
+      <D unit="g/cm3" value="1e-25"/>
+      <fraction n="1" ref="H0x7fd669d16ac0"/>
+    </material>
+  </materials>
+
+  <solids>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ionChamber0x7fd6a9c7dad0" rmax="50" rmin="0" startphi="0" z="50"/>
+    <box lunit="mm" name="waterBox0x7fd6a9c6fa60" x="5000" y="5000" z="5000"/>
+    <box lunit="mm" name="boxDummy0x7fd6a9c7eac0" x="5060" y="5060" z="5060"/>
+  </solids>
+
+  <structure>
+    <volume name="ic_00x7fd6a9c7de80">
+      <materialref ref="G4_AIR_00x7fd6a9c792c0"/>
+      <solidref ref="ionChamber0x7fd6a9c7dad0"/>
+    </volume>
+    <volume name="waterBox_00x7fd6a9ce41d0">
+      <materialref ref="G4_WATER_00x7fd6a9ce67e0"/>
+      <solidref ref="waterBox0x7fd6a9c6fa60"/>
+      <physvol name="ic_00x7fd6a9c7df70">
+        <volumeref ref="ic_00x7fd6a9c7de80"/>
+        <position name="ic_00x7fd6a9c7df70_pos" unit="mm" x="0" y="0" z="2474.5"/>
+      </physvol>
+    </volume>
+    <volume name="phantom_00x7fd6a9ca08e0">
+      <materialref ref="G4_Galactic_00x7fd6d9d04330"/>
+      <solidref ref="boxDummy0x7fd6a9c7eac0"/>
+      <physvol name="waterBox_00x7fd669ecff00">
+        <volumeref ref="waterBox_00x7fd6a9ce41d0"/>
+      </physvol>
+    </volume>
+  </structure>
+
+  <setup name="Default" version="1.0">
+    <world ref="phantom_00x7fd6a9ca08e0"/>
+  </setup>
+
+</gdml>

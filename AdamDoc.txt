@@ -1,0 +1,63 @@
+Run the following:
+
+wget https://dl.bintray.com/boostorg/release/1.71.0/source/boost_1_71_0.tar.gz 
+tar xvzf boost_1_71_0.tar.gz
+cd boost_1_71_0/
+chmod +x bootstrap.sh
+./bootstrap.sh
+./b2
+
+This will output something like:
+
+```
+The Boost C++ Libraries were successfully built!
+
+The following directory should be added to compiler include paths:
+
+    /home/glicka/boost_1_71_0
+
+The following directory should be added to linker library paths:
+
+    /home/glicka/boost_1_71_0/stage/lib
+```
+
+Remove lines 31-34 to `install_g4py.sh` and the following:
+
+set(BOOST_ROOT "$/home/glicka/boost_1_71_0")
+set(BOOST_INCLUDE_DIRS "${BOOST_ROOT}/include")
+set(BOOST_LIBRARY_DIRS "${BOOST_ROOT}/stage/lib/")
+set(ENV{BOOST_INCLUDEDIR} "${BOOST_ROOT}/include")
+set(ENV{BOOST_LIBRARYDIR} "${BOOST_ROOT}/lib")
+
+I don't think that the last two lines of this are necessary, but I had them included just in case.
+
+Then run:
+export PYTHONPATH=~/GEANT4.10.5.p0/geant4-source/environments/g4py/lib:~/GEANT4.10.5.p0/geant4-source/environments/g4py/lib/examples:~/GEANT4.10.5.p0/geant4-source/environments/g4py/lib/tests
+
+setenv PYTHONPATH
+```
+bash installs/install_g4py.sh
+```
+
+which will run until the last two lines.
+
+If it fails because it cannot find the package XercesC, run the following:
+
+`sudo apt-get install libxerces-c-dev`
+
+To link the new installation to system python do the following:
+
+```
+cd /usr/lib/python2.7/
+sudo mkdir Geant4
+sudo ln -sf "/home/glicka/GEANT4.10.5.p0/geant4-source/environments/g4py27/lib/Geant4" "/usr/lib/python2.7/Geant4"
+```
+
+Finally you can install the `geant4py` package to run the examples. cd to wherever you cloned the folder and run:
+
+```
+sudo python setup.py install
+```
+
+If you're going to add something to g4py, for example a new geometry to the `prebuilt` folder, you need to also add a line in the `__init__.py` file for that new geomtry. Otherwise it won't install and running a script with that geometry will not work.
+

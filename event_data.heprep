@@ -1,0 +1,1686 @@
+<?xml version="1.0" ?>
+<heprep version="2.0"
+  xmlns="http://java.freehep.org/schemas/heprep/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.freehep.org/schemas/heprep/2.0 http://java.freehep.org/schemas/heprep/2.0/HepRep.xsd">
+  <layer order="Geometry, Event, CalHit, Trajectory, Hit"/>
+  <typetree name="G4GeometryTypes" version="1.0">
+<type name="Event Data">
+      <attdef category="Physics" desc="Logical Volume" extra=""
+        name="LVol"/>
+      <attdef category="Physics" desc="Cuts Region" extra=""
+        name="Region"/>
+      <attdef category="Physics" desc="Root Region" extra=""
+        name="RootRegion"/>
+      <attdef category="Physics" desc="Solid Name" extra=""
+        name="Solid"/>
+      <attdef category="General" desc="Generator of the file"
+        extra="" name="Generator"/>
+      <attdef category="General"
+        desc="Version of the Generator" extra="" name="GeneratorVersion"/>
+      <attdef category="Draw"
+        desc="Theta of initial suggested viewpoint" extra="rad" name="ViewTheta"/>
+      <attdef category="Draw"
+        desc="Phi of initial suggested viewpoint" extra="rad" name="ViewPhi"/>
+      <attdef category="Draw"
+        desc="Scale of initial suggested viewpoint" extra="" name="ViewScale"/>
+      <attdef category="Draw"
+        desc="Translate in X of initial suggested viewpoint" extra="" name="ViewTranslateX"/>
+      <attdef category="Draw"
+        desc="Translate in Y of initial suggested viewpoint" extra="" name="ViewTranslateY"/>
+      <attdef category="Draw"
+        desc="Translate in Z of initial suggested viewpoint" extra="" name="ViewTranslateZ"/>
+      <attdef category="Physics" desc="Length" extra=""
+        name="PointUnit"/>
+      <attdef category="Draw"
+        desc="Use HepRep Solids rather than Geant4 Primitives" extra="" name="UseSolids"/>
+      <attdef category="Draw" desc="Write Invisible Objects"
+        extra="" name="WriteInvisibles"/>
+      <attdef category="Physics" desc="Entity Type" extra=""
+        name="EType"/>
+      <attdef category="Physics" desc="Material Name" extra=""
+        name="Material"/>
+      <attdef category="Physics" desc="Material Density"
+        extra="" name="Density"/>
+      <attdef category="Physics" desc="Material State" extra=""
+        name="State"/>
+      <attdef category="Physics"
+        desc="Material Radiation Length" extra="" name="Radlen"/>
+      <attvalue name="Layer" value="0"/>
+      <attvalue name="LVol" value=""/>
+      <attvalue name="Region" value=""/>
+      <type  name="Trajectories">
+        <attvalue  name="Layer"
+          value="100"/>
+        <attdef extra="" name="ID" type="Physics"
+        desc="Track ID"/>
+        <attdef extra="" name="PID" type="Physics"
+        desc="Parent ID"/>
+        <attdef extra="" name="PN" type="Physics"
+        desc="Particle Name"/>
+        <attdef extra="e+" name="Ch" type="Physics"
+        desc="Charge"/>
+        <attdef extra="" name="PDG" type="Physics"
+        desc="PDG Encoding"/>
+        <attdef extra="MeV" name="IKE" type="Physics"
+        desc="Initial kinetic energy"/>
+        <attdef extra="MeV" name="IMom-X" type="Physics"
+        desc="Initial momentum-X"/>
+        <attdef extra="MeV" name="IMom-Y" type="Physics"
+        desc="Initial momentum-Y"/>
+        <attdef extra="MeV" name="IMom-Z" type="Physics"
+        desc="Initial momentum-Z"/>
+        <attdef extra="MeV" name="IMag" type="Physics"
+        desc="Initial momentum magnitude"/>
+        <attdef extra="" name="NTP" type="Physics"
+        desc="No. of points"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="0.388916"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-27.0365"/>
+          <attvalue  name="IMag"
+            value="27.0365"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="11.35"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-146.482"/>
+          <attvalue  name="IMag"
+            value="146.482"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="3.13399"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-76.8049"/>
+          <attvalue  name="IMag"
+            value="76.8049"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="0.286513"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-23.2051"/>
+          <attvalue  name="IMag"
+            value="23.2051"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="0.345848"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-25.4954"/>
+          <attvalue  name="IMag"
+            value="25.4954"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="1.80593"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-58.2823"/>
+          <attvalue  name="IMag"
+            value="58.2823"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="1.86662"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-59.2545"/>
+          <attvalue  name="IMag"
+            value="59.2545"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="0.504426"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-30.7918"/>
+          <attvalue  name="IMag"
+            value="30.7918"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="7.43065"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-118.399"/>
+          <attvalue  name="IMag"
+            value="118.399"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="1.56682"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-54.2836"/>
+          <attvalue  name="IMag"
+            value="54.2836"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="1.1767"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-47.0379"/>
+          <attvalue  name="IMag"
+            value="47.0379"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="1.08526"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-45.1722"/>
+          <attvalue  name="IMag"
+            value="45.1722"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="13.5072"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-159.888"/>
+          <attvalue  name="IMag"
+            value="159.888"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="1.36896"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-50.7379"/>
+          <attvalue  name="IMag"
+            value="50.7379"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="0.975191"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-42.8189"/>
+          <attvalue  name="IMag"
+            value="42.8189"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="1.21928"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-47.8819"/>
+          <attvalue  name="IMag"
+            value="47.8819"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="9.40976"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-133.307"/>
+          <attvalue  name="IMag"
+            value="133.307"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="0.257494"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-21.9984"/>
+          <attvalue  name="IMag"
+            value="21.9984"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="0.997554"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-43.3074"/>
+          <attvalue  name="IMag"
+            value="43.3074"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="0.370723"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-26.3965"/>
+          <attvalue  name="IMag"
+            value="26.3965"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="0.713933"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-36.6345"/>
+          <attvalue  name="IMag"
+            value="36.6345"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="2.13412"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-63.3629"/>
+          <attvalue  name="IMag"
+            value="63.3629"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="7.28079"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-117.195"/>
+          <attvalue  name="IMag"
+            value="117.195"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="7.12722"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-115.947"/>
+          <attvalue  name="IMag"
+            value="115.947"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="0.677805"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-35.6952"/>
+          <attvalue  name="IMag"
+            value="35.6952"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="2.13795"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-63.4197"/>
+          <attvalue  name="IMag"
+            value="63.4197"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="1.71947"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-56.8688"/>
+          <attvalue  name="IMag"
+            value="56.8688"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="1.51031"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-53.2949"/>
+          <attvalue  name="IMag"
+            value="53.2949"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="12.8091"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-155.673"/>
+          <attvalue  name="IMag"
+            value="155.673"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="1.32736"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-49.9603"/>
+          <attvalue  name="IMag"
+            value="49.9603"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="1.29264"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-49.3022"/>
+          <attvalue  name="IMag"
+            value="49.3022"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="1.97587"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-60.9657"/>
+          <attvalue  name="IMag"
+            value="60.9657"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="1.05207"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-44.4756"/>
+          <attvalue  name="IMag"
+            value="44.4756"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="0.588634"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-33.2636"/>
+          <attvalue  name="IMag"
+            value="33.2636"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="7.52398"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-119.143"/>
+          <attvalue  name="IMag"
+            value="119.143"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="4.48938"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-91.9581"/>
+          <attvalue  name="IMag"
+            value="91.9581"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="5.62578"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-102.972"/>
+          <attvalue  name="IMag"
+            value="102.972"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="14.3995"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-165.124"/>
+          <attvalue  name="IMag"
+            value="165.124"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="11.9296"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-150.198"/>
+          <attvalue  name="IMag"
+            value="150.198"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="5.72115"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-103.844"/>
+          <attvalue  name="IMag"
+            value="103.844"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="1.69569"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-56.4739"/>
+          <attvalue  name="IMag"
+            value="56.4739"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="2.20231"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-64.3683"/>
+          <attvalue  name="IMag"
+            value="64.3683"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="4.9553"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-96.6241"/>
+          <attvalue  name="IMag"
+            value="96.6241"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="0.82483"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-39.3782"/>
+          <attvalue  name="IMag"
+            value="39.3782"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="1.34088"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-50.2144"/>
+          <attvalue  name="IMag"
+            value="50.2144"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="2.44317"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-67.8013"/>
+          <attvalue  name="IMag"
+            value="67.8013"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="0.276245"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-22.7855"/>
+          <attvalue  name="IMag"
+            value="22.7855"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="10.1367"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-138.387"/>
+          <attvalue  name="IMag"
+            value="138.387"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="5.57064"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-102.465"/>
+          <attvalue  name="IMag"
+            value="102.465"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+          <attvalue  name="ID"
+            value="1"/>
+          <attvalue  name="PID"
+            value="0"/>
+          <attvalue  name="PN"
+            value="neutron"/>
+          <attvalue  name="Ch"
+            value="0"/>
+          <attvalue  name="PDG"
+            value="2112"/>
+          <attvalue  name="IKE"
+            value="2.73787"/>
+          <attvalue  name="IMom-X"
+            value="-0"/>
+          <attvalue  name="IMom-Y"
+            value="-0"/>
+          <attvalue  name="IMom-Z"
+            value="-71.7796"/>
+          <attvalue  name="IMag"
+            value="71.7796"/>
+          <attvalue  name="NTP"
+            value="2"/>
+          <attvalue  name="DrawAs"
+            value="Line"/>
+          <attvalue  name="LineColor"
+            value="0,255,0"/>
+          <attvalue  name="Visibility"
+            value="True"/>
+</type>
+</type>
+</typetree>
+<instancetree name="G4GeometryData"
+typetreename="G4GeometryTypes" typetreeversion="1.0" version="1.0">
+<treeid name="geometry.heprep#G4GeometryData"
+qualifier="top-level" version="1.0"/>
+ <instance type="Event Data">
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+ <instance type="Event Data/Trajectories">
+<point x="0.0" y="0.0" z="-1000.0"/>
+<point x="0.0" y="0.0" z="-50000.0"/>
+</instance>
+</instance>
+</instancetree>
+</heprep>
